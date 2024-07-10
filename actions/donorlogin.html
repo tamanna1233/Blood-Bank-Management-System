@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor login</title>
+    <link rel="stylesheet" href="./donorlogin.css">
+    <style>
+
+
+    </style>
+</head>
+<body style="background-image: url(../css/images/bluepatternimg.jpg);">
+    
+  <div class="nav">
+    <nav>
+       
+
+<div class="topnav" id="myTopnav">
+    <a href="../index.php">Home</a>
+  <a href="../patient/patientlogin.html" onclick="openpatientloginform()">Patient</a>
+  
+  
+  <a href="#donor" class="active" onclick="opendonorloginform()">Donor </a>
+  <!-- <a href="">Donate Blood</a> -->
+  <a href="../adminlogin.html" onclick="openadminloginform()">Admin login
+  </a>
+  <a href="../about page/about page.html">About Us</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        
+    </nav>
+   </div>
+<br><br><br>
+<!-- login form -->
+
+<div class="container">
+  
+  <h2 style="padding: 1px 0 4px 0; text-align: center; color: rgb(14, 14, 79);">Login Form</h2>
+<form action="./login.php"  id="donorloginformcontainer" method="post">
+  
+  <!-- <div class="imgcontainer">
+    <img src="../css/images/login.png" alt="Avatar" class="avatar">
+  </div> -->
+
+  <div class="container">
+    <label for="email" ><b>Email</b></label>
+    <input type="email" id="username" placeholder="Enter Username" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+    
+    <input type="submit" name="submit">
+    Don't have an account?<a href="./donorregister.html">Register now</a>
+   <!-- <button type="button" name="login" onclick="validateLogin2()">Login</button>  -->
+     
+
+  </div>
+
+  <!-- <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button> -->
+    <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+  </div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="./server.js"></script>
+</body>
+</html>

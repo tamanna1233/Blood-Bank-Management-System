@@ -1,0 +1,57 @@
+@import url(./navbar.css);
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+/* nav bar */
+
+.container{
+    margin: 2%;
+    padding: 1em auto;
+    width: 90%;
+    /* background-color: aqua; */
+    text-align: center;
+     overflow-x: auto;
+}
+  
+table{
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+.container table th,td{
+    border: 0.5px solid black;
+    padding: 1vb;
+}
+  /* table tr:nth-child(even){
+    background-color: rgb(223, 219, 219);
+ };  */
+
+
+ th{
+    
+ }
+ table tr:hover{
+                background-color:rgb(119, 118, 118);
+                color: rgb(7, 7, 7);
+ }
+
+ @media screen and (max-width:600px) {
+    .container{
+        margin: 0px;
+    }
+    
+ }
+
+
+ .container table tr button{
+    background-color: green;
+    color: white;
+    padding: 0.5em;
+ }
+    

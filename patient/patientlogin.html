@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor login</title>
+    <!-- <link rel="stylesheet" href="./patientlogin.css"> -->
+    <style>
+      @import url(./navbar.css);
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2px;
+    padding:20px;
+
+}
+    
+form {
+    height: 60%;
+    width: 30%; 
+    margin: 1em;
+    padding: 1px; 
+    box-shadow: 3px 3px 5px 0px #cd6666;
+    border: 3px solid #f1f1f1;
+    background-color: rgb(174, 218, 249);
+  }
+  .container form label{
+    /* background-color: #04AA6D; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    height:10% ;
+  width: 10%;
+  padding: 0%;
+  border-radius: 50%;
+}
+
+.container1{
+  padding: 16px;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  
+  .cancelbtn {
+     width: 100%;
+     margin: 0%;
+  }
+}
+
+
+    </style>
+</head>
+<body style="background-image: url(../css/images/bluepatternimg.jpg);">
+    
+  <div class="nav">
+    <nav>
+       
+
+<div class="topnav" id="myTopnav">
+    <a href="../index.php">Home</a>
+  <a href="#patient" class="active" onclick="openpatientloginform()">Patient</a>
+  
+  
+  <a href="../actions/donorlogin.html" onclick="opendonorloginform()">Donor </a>
+  <!-- <a href="">Donate Blood</a> -->
+  <a href="../adminlogin.html" onclick="openadminloginform()">Admin login
+  </a>
+  <a href="../about page/about page.html">About Us</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        
+    </nav>
+   </div>
+
+<!-- login form -->
+
+<div class="container">
+  
+
+<form action="./plogin.php"  id="patientloginformcontainer" method="post">
+  <h2 style="padding: 3px; text-align: center;color: rgb(11, 53, 90);">Login Form</h2>
+  <div class="imgcontainer">
+    <img src="../css/images/login.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="email" id="username" placeholder="Enter Username" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+    
+    <input type="submit" name="submit">
+    Don't have an account?<a href="./patientregister.html">Register now</a>
+   <!-- <button type="button" name="login" onclick="validateLogin2()">Login</button>  -->
+     
+
+  </div>
+
+  <!-- <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button> -->
+    <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+  </div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="./server.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/adminlog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+
+  <div class="nav">
+    <nav>
+       
+
+<div class="topnav" id="myTopnav">
+    <a href="./index.php" >home</a>
+  <a href="./patient/patientlogin.html">patient</a>
+  
+  
+  <a href="./actions/donorlogin.html" >Donor </a>
+  <!-- <a href="">Donate Blood</a> -->
+  <a href="#admin" class="active" >Admin login</a>
+  </a>
+  <a href="./about page/about page.html">About Us</a>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+        
+    </nav>
+   </div>
+    
+    <!-- login form -->
+    
+<div class="container">
+  
+    
+  <form action="" method="post" id="adminloginformcontainer">
+    <div class="imgcontainer">
+      <!-- <h2>Login Form</h2> -->
+      <img src="./css/images/login.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" id="username" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+          
+      <button type="button"  onclick="validateLogin3()">Login</button>
+  
+    </div>
+</div>
+    
+      <!-- <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button> -->
+        <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+      
+      
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      // nav bar javascript
+  
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+  function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+       x.className += " responsive";
+     } else {
+       x.className = "topnav";
+     }
+   }
+   </script>
+
+   <!--  
+   <script>
+    function validatLogin() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+  
+      // Perform simple validation (you may want to use more secure methods)
+      if (username === 'tamanna@gmail.com' && password === '8894097320') {
+        alert('Login successful!');
+        // Redirect or perform other actions after successful login
+        window.location.href = 'patientdashboard.html';
+
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    }
+  </script>-->
+  <script src="./server.js"></script>
+</body>
+</html>

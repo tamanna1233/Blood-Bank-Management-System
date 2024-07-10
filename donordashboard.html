@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css/donordashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-image: url(./priyanshu/patternimg);">
+    <!-- nav bar html -->
+    <div class="nav">
+        <nav>
+           
+    
+    <div class="topnav" id="myTopnav">
+        <!-- <a href="./index.html">home</a> -->
+        <!-- <a href="#dashboard" class="active">DashBoard</a> -->
+        <a href="./blood_donation_donor/blooddonationform.html">Donate </a>
+        <!-- <a href="./donorrequest.html">Request</a> -->
+      
+      <!-- <a href="./donations.html">Donations</a>
+      <a href="./request.html">requests
+      </a> -->
+      <a href="./logout.php" class="item">Logout</a>
+
+      <button onclick="goBack()">Go Back</button>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+            
+        </nav>
+       </div>
+
+            <!-- dashboard html -->
+
+       <div class="container">
+        <div class="container1">
+            <div class="item item1"><h4>Blood Donated </h4>
+                <br>
+                 Total 
+                  <!-- units change -->
+                </div>
+                <div class="item item2"> <h4>Total Requests</h4> <br> 
+                    
+                    Total 
+                     <!-- units change -->
+                </div>
+                <div class="item item3"> <h4>Request Pending </h4><br> 
+                    Total 
+                     <!-- units change -->
+                </div>
+                <div class="item item4"> <h4>Request Accepted </h4><br> 
+                    Total 
+                     <!-- units change -->
+                </div> 
+        </div>
+        <br><br><br>
+      <div class="container2">
+        <div class="item item5"> <h4>Request Rejected</h4> <br> 
+            Total 
+             <!-- units change --> <br>
+        </div>
+        <!-- <div class="item item6"> <h4>AB-</h4> <br> 
+             Blood Available<br>
+             Total 
+        </div>
+        <div class="item item7"> <h4>O- </h4><br> 
+            Blood Available<br>
+                     Total 
+        </div>
+        <div class="item item8"> <h4>O+ </h4><br> 
+            
+            Blood Available<br>
+            Total 
+             units change -->
+                      <!-- units change -->
+        </div> 
+       </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        // nav bar javascript
+    
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
+       }
+     }
+     </script>
+     <script>
+      function goBack() {
+  window.location.href="index.html";
+}
+     </script>
+</body>
+</html>

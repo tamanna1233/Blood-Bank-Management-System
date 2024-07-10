@@ -1,0 +1,42 @@
+@import url(./nav\ bar.css);
+
+
+
+.container{
+    height:100%;
+    width: 100%o;
+    /* background-color: rgb(228, 186, 186); */
+    padding: 2% 10% 5% 10%;
+    margin: 2% 0% 0% 0%; 
+      display:block;
+     /* grid-template-columns: auto auto auto auto auto ; */
+      gap: 10%;
+} 
+ .container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .item{
+                     height: max-content;
+                     width: max-content;
+                     padding: 2% 3% 2% 3%;
+                      background-color: white; 
+                     border: 2px solid black;
+                     border-radius: 50%;
+                     letter-spacing: 2%;
+                     font-size: 1.2em;
+}
+.container .item h3{
+    text-align: center;
+    color: rgb(189, 12, 12);
+}
+.container .item:hover{
+    background-color: rgb(223, 215, 215);
+}

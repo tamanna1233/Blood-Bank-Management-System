@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./blooddonationform.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    
+<!-- nav bar html -->
+<div class="nav">
+    <nav>
+       
+        <div class="topnav" id="myTopnav">
+            <!-- <a href="../index.html">home</a> -->
+            <!-- <a href="../donordashboard.html">DashBoard</a> -->
+            <a href="./blooddonationform.html" class="active">Donate</a>
+            <a href="./about page.html">About Us</a>
+            <!-- <a href="../donorrequest.html">Request</a> -->
+          
+          
+          <a href="../logout.php">logout</a>
+          <!-- <button onclick="goBack()">go back</button> -->
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+            <i class="fa fa-bars"></i>
+          </a>
+          
+        </div>
+
+        
+    </nav>
+   </div>
+
+
+   <!-- login form -->
+    
+   <div class="container">
+
+    
+   <form action="./blood_donation.php" method="post">
+     <!-- <div class="imgcontainer">
+       <img src="./css/images/login.png" alt="Avatar" class="avatar">
+     </div> -->
+     <h2 style="text-align: center; color: #a41818;">Blood Donation Form</h2>
+     <div class="container1">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="" placeholder="Enter your name"><br>
+      <label for="phone">Mobile no.</label><br>
+      <input type="tel" name="mobile" ><br>
+      <label for="dob">Date of bith</label><br>
+      <input type="date" name="dob" id=""><br>
+       <label for="unit">No. of Units:</label>
+       <input type="text" placeholder="No. of Units(in ml)" name="units" required>
+       <br>
+   
+       <label for="blood group">Blood Type </label><br>
+<select name="blood_group" id="blood group" aria-placeholder="blood type">
+    <option value="">-select-</option>
+    <option value="A+">A+</option>
+    <option value="B">B</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+
+    
+</select><br>
+<label for="disease">Disease(if any)</label>
+<textarea name="disease" id="disease" cols="5" rows="1" placeholder="Mention disease if any(Optional)"></textarea>
+       <button type="submit" name="submit">Submit</button>
+   
+     </div>
+   
+     <!-- <div class="container1" style="background-color:#f1f1f1">
+       <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+     </div> -->
+   </form>
+   </div>
+l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+   <script>
+    // nav bar javascript
+
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
+   } else {
+     x.className = "topnav";
+   }
+ }
+ </script>
+ <script>
+  function goBack() {
+window.location.href="index.html";
+}
+ </script>
+</body>
+</html>
